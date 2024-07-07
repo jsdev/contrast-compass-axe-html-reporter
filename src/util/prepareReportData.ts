@@ -80,6 +80,7 @@ export function prepareReportData({
                     const defaultHighlight = {
                         highlight: 'Recommendation with the fix was not provided by axe result',
                     };
+                    console.log(id);
                     const fixSummaries: FixSummary[] = failureSummary
                         ? prepareFixSummary(failureSummary, defaultHighlight)
                         : [defaultHighlight];

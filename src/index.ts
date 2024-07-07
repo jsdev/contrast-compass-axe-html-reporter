@@ -71,9 +71,12 @@ export function createHtmlReport({ results, options }: CreateReport): string {
         }
 
         return htmlContent;
-    } catch (e) {
-        console.warn(`HTML report was not created due to the error ${e.message}`);
-
-        return `Failed to create HTML report due to an error ${e.message}`;
+    } 
+    // type catch error block
+    
+    catch (e: any) {
+        console.warn(`HTML report was not created due to the error ${(e as Error).message}`);
+    
+        return `Failed to create HTML report due to an error ${(e as Error).message}`;
     }
 }

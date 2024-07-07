@@ -1,12 +1,12 @@
 {
-    "name": "axe-html-reporter",
+    "name": "contrast-compass-axe-html-reporter",
     "version": "2.2.2",
-    "description": "The module that allows you to create HTML Report from raw accessibility aXe result object",
+    "description": "The module that allows you to create Contrast Compass enhanced, fully accessible HTML Report from raw accessibility aXe result object",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/lpelypenko/axe-html-reporter"
+        "url": "https://github.com/jsdev/contrast-compass-axe-html-reporter"
     },
     "engines": {
         "node": ">=8.9.0"
@@ -17,7 +17,7 @@
         "test",
         "accessibility"
     ],
-    "author": "Liliia Pelypenko (liliia.pelypenko@gmail.com)",
+    "maintainer": "jsdev",
     "license": "MIT",
     "files": [
         "dist",
@@ -26,9 +26,9 @@
         "types"
     ],
     "bugs": {
-        "url": "https://github.com/lpelypenko/axe-html-reporter/issues"
+        "url": "https://github.com/jsdev/contrast-compass-axe-html-reporter/issues"
     },
-    "homepage": "https://github.com/lpelypenko/axe-html-reporter",
+    "homepage": "https://github.com/jsdev/contrast-compass-axe-html-reporter",
     "scripts": {
         "prebuild": "rimraf dist build",
         "copy": "cp -R ./src/util/template ./dist/util/template",
@@ -41,19 +41,19 @@
         "registry": "http://registry.npmjs.org"
     },
     "peerDependencies": {
-        "axe-core": ">=3"
+        "axe-core": "4.9.1"
     },
     "devDependencies": {
-        "@types/jest": "^25.2.3",
-        "@types/mustache": "^4.0.1",
-        "@types/node": "^14.11.8",
-        "jest": "^26.5.3",
-        "prettier": "^2.1.2",
-        "ts-jest": "^26.4.1",
+        "@types/jest": "^29.5.12",
+        "@types/mustache": "^4.2.5",
+        "@types/node": "^20.14.10",
+        "jest": "^29.7.0",
+        "prettier": "^3.2.2",
+        "ts-jest": "^29.1.5",
         "typescript": "^4.0.3"
     },
     "dependencies": {
-        "mustache": "^4.0.1",
-        "rimraf": "^3.0.2"
+        "mustache": "^4.2.0",
+        "rimraf": "^5.0.8"
     }
 }
