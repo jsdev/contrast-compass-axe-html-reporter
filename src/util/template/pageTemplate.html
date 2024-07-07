@@ -85,18 +85,18 @@
         </h1>
         <div class="summarySection">
             {{#url}}
-            <div class="summary">
+            <h2 class="summary">
                 Page URL:
                 <a href="{{url}}" target="_blank" class="card-link">{{url}}</a>
                 <br />
-            </div>
+            </h2>
             {{/url}} {{#customSummary}}
             <div class="summary">{{{customSummary}}}</div>
             {{/customSummary}}
         </div>
-        <h5>{{{violationsSummary}}}</h5>
         {{#violationDetails.length}}
         <table class="table table-striped table-bordered">
+            <caption>{{{violationsSummary}}}</caption>
             <thead>
                 <tr>
                     <th style="width: 5%">#</th>

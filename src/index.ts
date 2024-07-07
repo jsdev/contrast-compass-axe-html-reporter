@@ -71,12 +71,15 @@ export function createHtmlReport({ results, options }: CreateReport): string {
         }
 
         return htmlContent;
-    } 
-    // type catch error block
-    
-    catch (e: any) {
-        console.warn(`HTML report was not created due to the error ${(e as Error).message}`);
-    
-        return `Failed to create HTML report due to an error ${(e as Error).message}`;
     }
+    catch (error: unknown) {
+        if (error instanceof Error) {
+          const errorMessage = error.message;
+          console.warn(`HTML report was not created due to the error ${errorMessage}`);
+          return `Failed to create HTML report due to an error ${errorMessage}`;
+        } else {
+          console.warn('An unknown error occurred');
+          return 'Failed to create HTML report due to an unknown error';
+        }
+      }
 }

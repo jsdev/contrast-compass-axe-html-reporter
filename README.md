@@ -1,15 +1,17 @@
-# axe-html-reporter
+# contrast-compass-axe-html-reporter
 
-Creates an HTML report from axe-core library AxeResults object listing violations, passes, incomplete and incompatible results.
+Creates an accessible HTML report from axe-core library AxeResults object listing violations, passes, incomplete and incompatible results. For color violations it will launch contrast compass with the context of issue to fix which can download new CSS or CSS changes to make.
 
 Allows specifying report creation options: `reportFileName`, `outputDir`, `outputDirPath`, `projectKey` and `customSummary`.
+
+This was forked from axe-html-reporter.
 
 Notes: 
 
 - `customSummary` allows having html parameters
 - `outputDirPath` allows specifying absolute path
 
-Please check [sample report output.](https://lpelypenko.github.io/axe-html-reporter/)
+Please check [sample report output.](https://jsdev.github.io/contrast-compass-axe-html-reporter/)
 
 `createHtmlReport` returns HTML content that can be additionally used for specific integrations.
 
@@ -38,7 +40,7 @@ fs.writeFileSync('build/reports/saveReportHere.html', reportHTML);
 ## Install
 
 ```
-npm i -D axe-html-reporter
+npm i -D contrast-compass-axe-html-reporter
 ```
 
 ## Usage
@@ -48,7 +50,7 @@ npm i -D axe-html-reporter
 To run TestCafe tests with axe-core, install testcafe, axe-core and [@testcafe-community/axe](https://www.npmjs.com/package/@testcafe-community/axe):
 
 ```shell script
-npm i -D axe-html-reporter testcafe axe-core @testcafe-community/axe
+npm i -D contrast-compass-axe-html-reporter testcafe axe-core @testcafe-community/axe
 ```
 
 For TestCafe example add the following clientScript in your `.testcaferc.json` config:
@@ -65,7 +67,7 @@ See full TestCafe test example is bellow:
 
 ```javascript
 import { runAxe } from '@testcafe-community/axe';
-import { createHtmlReport } from 'axe-html-reporter';
+import { createHtmlReport } from 'contrast-compass-axe-html-reporter';
 
 fixture('TestCafe tests with Axe').page('http://example.com');
 
@@ -110,7 +112,7 @@ HTML report was saved into the following directory /Users/axe-demos/artifacts/ac
 ### Example usage in any JS framework
 
 ```javascript
-import { createHtmlReport } from 'axe-html-reporter';
+import { createHtmlReport } from 'contrast-compass-axe-html-reporter';
 
 (() => {
     // creates html report with the default name `accessibilityReport.html` file
@@ -153,7 +155,7 @@ import { createHtmlReport } from 'axe-html-reporter';
 ### CommonJS
 
 ```javascript
-const { createHtmlReport } = require('axe-html-reporter');
+const { createHtmlReport } = require('contrast-compass-axe-html-reporter');
 
 (() => {
     // creates html report with the name `accessibilityReport.html` file
