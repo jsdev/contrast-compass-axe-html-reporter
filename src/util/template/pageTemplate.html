@@ -184,9 +184,9 @@
                                 <th style="width: 49%">
                                     To solve this violation, you need to...
                                 </th>
-                                {{#id.includes "color-contrast"}}
-                                <td style="text-align:center;width:64px">Extra Column</td>
-                                {{/id.includes}}
+                                {{#hasColorContrastIssue}}
+                                <th style="text-align:center">Fix</th>
+                                {{/hasColorContrastIssue}}
                             </tr>
                         </thead>
                         <tbody>
@@ -215,9 +215,9 @@
                                     <pre><code class="css text-wrap">{{.}}</code></pre>
                                     {{/relatedNodesAny}}
                                 </td>
-                                {{#id.includes "color-contrast"}}
-                                <td>Extra Column</td>
-                                {{/id.includes}}
+                                {{#hasColorContrastIssue}}
+                                <td style="text-align:center;width:64px">Extra Column</td>
+                                {{/hasColorContrastIssue}}
                             </tr>
                             {{/nodes}}
                         </tbody>

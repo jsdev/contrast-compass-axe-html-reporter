@@ -5,6 +5,7 @@ export interface Summary {
     help: string;
     impact: string;
     nodes: number;
+    hasColorContrastIssue?: boolean;
 }
 
 export interface FixSummary {
@@ -17,7 +18,8 @@ interface NodeResult {
     targetNodes: string;
     fixSummaries: FixSummary[];
     index: number;
-    relatedNodesAny: string[]
+    relatedNodesAny: string[];
+    hasColorContrastIssue?: boolean;
 }
 
 interface Details {
@@ -29,6 +31,7 @@ interface Details {
     help: string;
     helpUrl: string;
     nodes: NodeResult[];
+    hasColorContrastIssue?: boolean;
 }
 
 export interface AxeReport {

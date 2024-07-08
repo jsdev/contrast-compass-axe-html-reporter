@@ -1,6 +1,6 @@
 {
     "name": "contrast-compass-axe-html-reporter",
-    "version": "1.0.0-beta.4",
+    "version": "1.0.0-beta.5",
     "description": "The module that allows you to create Contrast Compass enhanced, fully accessible HTML Report from raw accessibility aXe result object",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
