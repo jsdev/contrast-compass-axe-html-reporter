@@ -127,30 +127,30 @@
         <div class="card violationCard">
             <div class="card-body">
                 <div class="violationCardLine">
-                    <h5 class="card-title violationCardTitleItem">
+                    <h4 class="card-title violationCardTitleItem">
                         <a id="{{index}}">{{index}}.</a> {{help}}
-                    </h5>
+                    </h4>
                     <a href="{{helpUrl}}" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
                         more</a>
                 </div>
                 <div class="violationCardLine">
-                    <h6 class="card-subtitle mb-2 text-muted">{{id}}</h6>
-                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                    <div class="card-subtitle mb-2 text-muted">{{id}}</div>
+                    <div class="card-subtitle mb-2 text-muted violationCardTitleItem">
                         {{wcag}}
-                    </h6>
+                    </div>
                 </div>
                 <div class="violationCardLine">
                     <p class="card-text">{{description}}</p>
-                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                    <div class="card-subtitle mb-2 text-muted violationCardTitleItem">
                         {{impact}}
-                    </h6>
+                    </div>
                 </div>
                 <div class="violationCardLine">
-                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                    <div class="card-subtitle mb-2 text-muted violationCardTitleItem">
                         Issue Tags: {{#tags}}
                         <span class="badge bg-light text-dark"> {{.}} </span>
                         {{/tags}}
-                    </h6>
+                    </div>
                 </div>
                 <div class="violationNode">
                     <table class="table table-sm table-bordered">
@@ -200,14 +200,14 @@
         <div id="accordionPasses">
             <div class="card">
                 <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
+                    <h4 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#passes" aria-expanded="false"
                             aria-controls="passes">
                             axe returned {{checksPassed.length}} passed axe
                             checks{{#checksPassed.length}}. Expand details on
                             click{{/checksPassed.length}}
                         </button>
-                    </h5>
+                    </h4>
                 </div>
                 <div id="passes" class="collapse" aria-labelledby="headingOne" data-parent="#accordionPasses">
                     <div class="card-body">
@@ -243,13 +243,13 @@
         <div id="accordionIncomplete">
             <div class="card">
                 <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
+                    <h4 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#incomplete"
                             aria-expanded="false" aria-controls="incomplete">
                             axe returned {{checksIncomplete.length}} incomplete checks. Expand
                             details on click
                         </button>
-                    </h5>
+                    </h4>
                 </div>
                 <div id="incomplete" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionIncomplete">
                     <div class="card-body">
@@ -296,13 +296,13 @@
         <div id="accordionInapplicable">
             <div class="card">
                 <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
+                    <h4 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#inapplicable"
                             aria-expanded="false" aria-controls="inapplicable">
                             axe returned {{checksInapplicable.length}} inapplicable checks.
                             Expand details on click
                         </button>
-                    </h5>
+                    </h4>
                 </div>
                 <div id="inapplicable" class="collapse" aria-labelledby="headingThree"
                     data-parent="#accordionInapplicable">
@@ -347,12 +347,12 @@
         <div id="rulesSection">
             <div class="card">
                 <div class="card-header" id="ruleSection">
-                    <h5 class="mb-0">
+                    <h4 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#rules" aria-expanded="false"
                             aria-controls="inapplicable">
                             axe was running with {{rules.length}} rules. Expand details on click
                         </button>
-                    </h5>
+                    </h4>
                 </div>
                 <div id="rules" class="collapse" aria-labelledby="ruleSection" data-parent="#rules">
                     <div class="card-body">

@@ -2571,7 +2571,7 @@
                 "all": [],
                 "none": [],
                 "impact": "serious",
-                "html": "<a href=\"mars2.html?a=fares_and_schedules\">Find Fares &amp; Schedules<br>\n </a>",
+                "html": "<a href=\"mars2.html?a=fares_and_schedules\">Find Fares &amp; Schedules<br />\n </a>",
                 "target": ["#footer-book > ul > li:nth-child(1) > a"],
                 "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
             },
@@ -2687,7 +2687,7 @@
                 "all": [],
                 "none": [],
                 "impact": "serious",
-                "html": "<a href=\"mars2.html?a=view_rocket_pass_listing\">View Rocket Pass Listing<br>\n </a>",
+                "html": "<a href=\"mars2.html?a=view_rocket_pass_listing\">View Rocket Pass Listing<br />\n </a>",
                 "target": ["#footer-book > ul > li:nth-child(5) > a"],
                 "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
             },

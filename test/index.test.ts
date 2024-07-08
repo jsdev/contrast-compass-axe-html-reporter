@@ -176,10 +176,10 @@ describe('Successful tests', () => {
     it('Custom Summary present', async () => {
         const reportFileName = 'tcIncludingCustomSummary.html';
         const customSummary = `Test Case: Full page analysis
-        <br>Steps:</br>
+        <br />Steps:
         <ol style="margin: 0">
-        <li>Open https://dequeuniversity.com/demo/mars/</li>
-        <li>Analyze full page with all rules enabled</li>
+            <li>Open https://dequeuniversity.com/demo/mars/</li>
+            <li>Analyze full page with all rules enabled</li>
         </ol>`;
         createHtmlReport({
             results: {
@@ -197,10 +197,10 @@ describe('Successful tests', () => {
     it('All optional parameters present', async () => {
         const reportFileName = 'tsAllOptionalParametersPresent.html';
         const customSummary = `Test Case: Full page analysis
-        <br>Steps:</br>
+        <br />Steps:
         <ol style="margin: 0">
-        <li>Open https://dequeuniversity.com/demo/mars/</li>
-        <li>Analyze full page with all rules enabled</li>
+            <li>Open https://dequeuniversity.com/demo/mars/</li>
+            <li>Analyze full page with all rules enabled</li>
         </ol>`;
 
         createHtmlReport({
@@ -222,10 +222,10 @@ describe('Successful tests', () => {
 
     it('Raw AxeResults passed and all optional params', async () => {
         const customSummary = `Test Case: Full page analysis
-        <br>Steps:</br>
+        <br />Steps:
         <ol style="margin: 0">
-        <li>Open https://dequeuniversity.com/demo/mars/</li>
-        <li>Analyze full page with all rules enabled</li>
+            <li>Open https://dequeuniversity.com/demo/mars/</li>
+            <li>Analyze full page with all rules enabled</li>
         </ol>`;
 
         const reportFileName = 'index.html';
@@ -242,10 +242,10 @@ describe('Successful tests', () => {
     });
     it('File will not be created and raw HTML result will be returned', async () => {
         const customSummary = `Test Case: Full page analysis
-        <br>Steps:</br>
+        <br />Steps:
         <ol style="margin: 0">
-        <li>Open https://dequeuniversity.com/demo/mars/</li>
-        <li>Analyze full page with all rules enabled</li>
+            <li>Open https://dequeuniversity.com/demo/mars/</li>
+            <li>Analyze full page with all rules enabled</li>
         </ol>`;
 
         const reportHTML = createHtmlReport({

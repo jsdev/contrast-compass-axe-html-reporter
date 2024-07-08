@@ -6,7 +6,7 @@
     "types": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jsdev/contrast-compass-axe-html-reporter"
+        "url": "git+https://github.com/jsdev/contrast-compass-axe-html-reporter.git"
     },
     "engines": {
         "node": ">=8.9.0"
@@ -38,7 +38,7 @@
     },
     "publishConfig": {
         "access": "public",
-        "registry": "http://registry.npmjs.org"
+        "registry": "https://registry.npmjs.org/"
     },
     "peerDependencies": {
         "axe-core": "4.9.1"

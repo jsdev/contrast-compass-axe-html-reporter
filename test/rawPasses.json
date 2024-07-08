@@ -4316,7 +4316,7 @@
                 "all": [],
                 "none": [],
                 "impact": null,
-                "html": "<script type=\"text/javascript\" async=\"\" src=\"https://app.pendo.io/data/guide.js/894187d2-2eaf-4eb0-5be1-e0f94b5c08ae?jzb=eJytkFFLwzAUhf9KyJPiaLN2rrZv4oMo-rSJj-M2uesCbRKT2yHI_vtuBSuIvgkhlHNuv3NyP-TRJks-PhjZSL2Gqi1vKlWvtIG1lgsJWvvR0addt_sV4n51jfW-Kktke4w9GweikJo878fBpyyBM61_z94gs84gmswh5RqGALZz_NOABAYIZDPHT5_2jwoBnfG7MWEkTCSb5ZcEztMB47ejFpK5eBeR74n2ikZsMAhVi0IVSiyrpiibcinun7dXqlZKXDxCACc2xKUhGrG1A15yaO819PgErhuhQ0ah271spjbRHm2P3cSnOCKP_hw6zWubn_XL6v6nKWcFiOjodk5kaWIzVNU5n4nHeUeMyXrHcpGty0ztQvRGnk5nFNahVQ&amp;v=2.63.0_prod&amp;ct=1599639812577\">",
+                "html": "<script type=\"text/javascript\" async=\"\" src=\"https://app.pendo.io/data/guide.js/894187d2-2eaf-4eb0-5be1-e0f94b5c08ae?jzb=eJytkFFLwzAUhf9KyJPiaLN2rrZv4oMo-rSJj-M2uesCbRKT2yHI_vtuBSuIvgkhlHNuv3NyP-TRJks-PhjZSL2Gqi1vKlWvtIG1lgsJWvvR0addt_sV4n51jfW-Kktke4w9GweikJo878fBpyyBM61_z94gs84gmswh4RqGALZz_NOABAYIZDPHT5_2jwoBnfG7MWEkTCSb5ZcEztMB47ejFpK5eBeR74n2ikZsMAhVi0IVSiyrpiibcinun7dXqlZKXDxCACc2xKUhGrG1A15yaO819PgErhuhQ0ah271spjbRHm2P3cSnOCKP_hw6zWubn_XL6v6nKWcFiOjodk5kaWIzVNU5n4nHeUeMyXrHcpGty0ztQvRGnk5nFNahVQ&amp;v=2.63.0_prod&amp;ct=1599639812577\">",
                 "target": ["script[async=\"\"][type=\"text\\/javascript\"]:nth-child(33)"]
             },
             {
@@ -7298,7 +7298,7 @@
                 "all": [],
                 "none": [],
                 "impact": null,
-                "html": "<br>",
+                "html": "<br />",
                 "target": ["br"]
             },
             {
@@ -14308,7 +14308,7 @@
                 "all": [],
                 "none": [],
                 "impact": null,
-                "html": "<p class=\"ia-campaign-management-block-comment\">You can limit the number of applies or amount of spend per job across all jobs in a single campaign. After a sponsored job crosses a limit, it will be paused. Your remaining budget will be spent on active jobs in the campaign.<br></p>",
+                "html": "<p class=\"ia-campaign-management-block-comment\">You can limit the number of applies or amount of spend per job across all jobs in a single campaign. After a sponsored job crosses a limit, it will be paused. Your remaining budget will be spent on active jobs in the campaign.<br /></p>",
                 "target": [".ia-campaign-management-block-comment"]
             },
             {
@@ -14324,7 +14324,7 @@
                 "all": [],
                 "none": [],
                 "impact": null,
-                "html": "<br>",
+                "html": "<br />",
                 "target": ["br"]
             },
             {
