@@ -6,6 +6,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <style>
+        caption {
+            caption-side: top;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+        }
+
         .violationCard {
             width: 100%;
             margin-bottom: 1rem;
@@ -100,11 +123,14 @@
             <thead>
                 <tr>
                     <th style="width: 5%">#</th>
-                    <th style="width: 45%">Description</th>
+                    <th>Description</th>
                     <th style="width: 15%">Axe rule ID</th>
                     <th style="width: 23%">WCAG</th>
                     <th style="width: 7%">Impact</th>
                     <th style="width: 5%">Count</th>
+                    {{#id.includes "color-contrast"}}
+                    <th style="text-align: center;width:64px">Extra Column</th>
+                    {{/id.includes}}
                 </tr>
             </thead>
             {{/violationDetails.length}}
@@ -117,6 +143,9 @@
                     <td>{{wcag}}</td>
                     <td>{{impact}}</td>
                     <td>{{nodes}}</td>
+                    {{#id.includes "color-contrast"}}
+                    <td>Extra Column</td>
+                    {{/id.includes}}
                 </tr>
                 {{/violations}}
             </tbody>
@@ -134,7 +163,7 @@
                         more</a>
                 </div>
                 <div class="violationCardLine">
-                    <div class="card-subtitle mb-2 text-muted">{{id}}</div>
+                    <div class=" ">{{id}}</div>
                     <div class="card-subtitle mb-2 text-muted violationCardTitleItem">
                         {{wcag}}
                     </div>
@@ -157,7 +186,7 @@
                         <thead>
                             <tr>
                                 <th style="width: 2%">#</th>
-                                <th style="width: 49%">Issue Description</th>
+                                <th>Issue Description</th>
                                 <th style="width: 49%">
                                     To solve this violation, you need to...
                                 </th>
