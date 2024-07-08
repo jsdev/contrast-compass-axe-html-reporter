@@ -128,9 +128,6 @@
                     <th style="width: 23%">WCAG</th>
                     <th style="width: 7%">Impact</th>
                     <th style="width: 5%">Count</th>
-                    {{#id.includes "color-contrast"}}
-                    <th style="text-align: center;width:64px">Extra Column</th>
-                    {{/id.includes}}
                 </tr>
             </thead>
             {{/violationDetails.length}}
@@ -143,9 +140,6 @@
                     <td>{{wcag}}</td>
                     <td>{{impact}}</td>
                     <td>{{nodes}}</td>
-                    {{#id.includes "color-contrast"}}
-                    <td>Extra Column</td>
-                    {{/id.includes}}
                 </tr>
                 {{/violations}}
             </tbody>
@@ -190,6 +184,9 @@
                                 <th style="width: 49%">
                                     To solve this violation, you need to...
                                 </th>
+                                {{#id.includes "color-contrast"}}
+                                <td style="text-align:center;width:64px">Extra Column</td>
+                                {{/id.includes}}
                             </tr>
                         </thead>
                         <tbody>
@@ -218,6 +215,9 @@
                                     <pre><code class="css text-wrap">{{.}}</code></pre>
                                     {{/relatedNodesAny}}
                                 </td>
+                                {{#id.includes "color-contrast"}}
+                                <td>Extra Column</td>
+                                {{/id.includes}}
                             </tr>
                             {{/nodes}}
                         </tbody>

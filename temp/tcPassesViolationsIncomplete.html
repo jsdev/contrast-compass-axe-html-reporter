@@ -365,7 +365,9 @@
                                     <p><strong>Related node:</strong></p>
                                     <pre><code class="css text-wrap">body</code></pre>
                                 </td>
-                                <td>Extra Columnn</td>
+                                {{#id.includes "color-contrast"}}
+                                <td style="text-align:center;width:64px">Extra Column</td>
+                                {{/id.includes}}
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -1566,7 +1568,9 @@ html</code></pre>
                                         </ul>
                                     </div>
                                 </td>
-                                <td>Extra Column</td>
+                                {{#id.includes "color-contrast"}}
+                                <td style="text-align:center;width:64px">Extra Column</td>
+                                {{/id.includes}}
                             </tr>
                         </tbody>
                     </table>
